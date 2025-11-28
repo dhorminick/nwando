@@ -1,0 +1,53 @@
+* {
+  font-family: "Noto Serif", serif;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif Bold", serif;
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("~/assets/fonts/noto/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Serif Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("~/assets/fonts/noto/NotoSans-Bold.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bb {
+  border-bottom: 1px solid var(theme("colors.primary"));
+  color: var(theme("colors.primary"));
+}
+
+section:not(.full) {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 769px) {
+  section:not(.full) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
