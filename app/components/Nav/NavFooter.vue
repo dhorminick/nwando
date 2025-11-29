@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white w-full shadow-md border py-[60px] px-[100px]">
+    <div class="bg-white w-full shadow-md border py-[60px] sm:px-[100px] px-[30px]">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-[50px]">
             <div>
                 <div class="text-[200%] font-bold">

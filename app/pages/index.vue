@@ -3,8 +3,8 @@
     <div class="flex flex-col gap-[10px] min-h-[690px] container">
         <NavHeader :tranparent="true" />
         <section class="flex-1 flex items-center py-[70px]">
-            <div class="sm:w-[55%]  w-full">
-                <h1 class="text-7xl tracking-wider text-white">Empowering Future Pharmacology Leaders </h1>
+            <div class="sm:w-[55%] w-full">
+                <h1 class="text-7xl sm:tracking-wider text-white">Empowering Future Pharmacology Leaders </h1>
                 <div class="text-white mt-[20px]">Supporting the next generation of pharmacology professionals!</div>
                 <div class="mt-[40px]">
                     <NuxtLink to="/application/procedure">
@@ -37,7 +37,7 @@
                 <h1 class="text-4xl">Our Contributions</h1>
                 <div>By investing in pharmacology education, we're contributing to:</div>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-[20px]">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-[20px]">
                 <div class="rounded-[10px] p-[20px] border hover:border-clay hover:shadow-md cursor-pointer 
             transition-transform duration-200 hover:scale-105" v-for="(i, idx) in features" :key="idx">
                     <div>
