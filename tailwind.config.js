@@ -10,6 +10,7 @@ export default {
         clay: "#b66a50",
         sand: "#c2b280",
         light_gray: "#D3D3D3",
+        light_clay: "#F5F3ED",
       },
     },
   },

@@ -1,9 +1,10 @@
 <template>
-    <NuxtLink v-if="!data.subs" :to="data.to" class="mb-[1px] hover:text-primary hover:border-b hover:border-b-primary">
+    <NuxtLink v-if="!data.subs" :to="data.to" class="mb-[1px] hover:text-clay hover:border-b hover:border-b-clay">
         {{ data.title }}
     </NuxtLink>
 
-    <NuxtLink v-else @click="toggle" class="cursor-pointer">{{ data.title }}</NuxtLink>
+    <NuxtLink v-else @click="toggle" class="cursor-pointer mb-[1px] hover:text-clay hover:border-b hover:border-b-clay">
+        {{ data.title }}</NuxtLink>
     <Popover ref="op">
         <div class="flex flex-col w-[250px] gap-[10px]">
             <NuxtLink v-for="(i, idx) in data.subs" :key="idx" :to="i.to"

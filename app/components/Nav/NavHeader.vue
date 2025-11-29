@@ -1,7 +1,7 @@
 <template>
     <div class="py-[5px] sm:px-[100px] px-[30px] bg-white">
         <div class="flex justify-end items-center gap-[20px]">
-            <div>contact@paulfoundation.com</div> |
+            <div>{{ socials.contact_email }}</div> |
             <SocialsWrapper gap="20px" />
         </div>
     </div>
@@ -19,16 +19,17 @@
 </template>
 
 <script setup>
+import { socials } from '~/utils/constants';
 const props = defineProps(['tranparent'])
 const links = ref([
     { id: 2, title: 'About Our Foundation', to: '/' },
     {
         id: 2, title: 'Our Founders', to: '#', subs: [
-            { name: 'Mr. Paul Okonkwo', to: '/' },
-            { name: 'Mrs. Rina Okonkwo', to: '/' }
+            { name: 'Prof. Mr. Paul Okonkwo', to: '/' },
+            { name: 'Prof. Mrs. Rina Okonkwo', to: '/' }
         ]
     },
-    { id: 3, title: 'Apply', to: '/' },
-    { id: 4, title: 'Contact Us', to: '/' }
+    { id: 3, title: 'Apply', to: '/application-procedure' },
+    { id: 4, title: 'Contact Us', to: '/#contact-us' }
 ])
 </script>
